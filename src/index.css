@@ -1,1 +1,36 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: "DM Sans Medium";
+    font-weight: 500;
+    font-style: normal;
+    src: url("src/assets/fonts/DMSans-Medium.ttf");
+}
+
+@font-face {
+    font-family: "DM Sans Medium Italic";
+    font-weight: 500;
+    font-style: italic;
+    src: url("src/assets/fonts/DMSans-MediumItalic.ttf");
+}
+
+@font-face {
+    font-family: "DM Sans Regular";
+    font-weight: 400;
+    src: url("src/assets/fonts/DMSans-Regular.ttf");
+}
+
+@theme {
+    --color-*: initial;
+
+    --color-purple-100: #dbd1fc;
+    --color-purple-500: #7551dc;
+    --color-purple-700: #5b3f8d;
+    --color-yellow-100: #f9eee2;
+    --color-yellow-500: #ffcc6a;
+    --color-white: #ffffff;
+    --color-black: #121212;
+
+    --font-dm-sans-med: "DM Sans Medium", sans-serif;
+    --font-dm-sans-reg: "DM Sans Regular", sans-serif;
+}
