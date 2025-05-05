@@ -1,7 +1,9 @@
 function App() {
     return (
         <>
-            <h1 className="text-8xl font-dm-sans-med italic">Bento Grid</h1>
+            <h1 className="font-dm-sans-med italic bg-yellow-500  text-preset-1">
+                Bento Grid
+            </h1>
         </>
     );
 }
