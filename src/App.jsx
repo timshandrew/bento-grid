@@ -1,5 +1,6 @@
 import fiveStarsImg from "./assets/images/illustration-five-stars.webp";
 import multiplePathsImg from "./assets/images/illustration-multiple-platforms.webp";
+import scheduleImg from "./assets/images/illustration-consistent-schedule.webp";
 
 function App() {
   return (
@@ -15,11 +16,18 @@ function App() {
         </span>
       </div>
 
-      <div className="m-1 bg-white">
+      <div className="m-1 rounded-lg bg-white p-2">
         <img src={multiplePathsImg} />
         <h1 className="text-preset-3">
           Manage multiple accounts and platforms.
         </h1>
+      </div>
+
+      <div className="m-1 rounded-lg bg-yellow-500 p-2 pb-0">
+        <h1 className="text-preset-3 mb-2">
+          Maintain a consistent posting schedule.
+        </h1>
+        <img src={scheduleImg} />
       </div>
     </div>
   );
