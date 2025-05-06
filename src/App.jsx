@@ -3,6 +3,9 @@ import multiplePathsImg from "./assets/images/illustration-multiple-platforms.we
 import consistent from "./assets/images/illustration-consistent-schedule.webp";
 import scheduleImg from "./assets/images/illustration-schedule-posts.webp";
 import growthImg from "./assets/images/illustration-grow-followers.webp";
+import audienceImg from "./assets/images/illustration-audience-growth.webp";
+import createPostImg from "./assets/images/illustration-create-post.webp";
+import aiContentImg from "./assets/images/illustration-ai-content.webp";
 
 function App() {
   return (
@@ -46,6 +49,27 @@ function App() {
         <h1 className="text-preset-2 text-center">
           Grow followers with non-stop content.
         </h1>
+      </div>
+
+      <div className="rounded-lg bg-white p-3">
+        <h1 className="text-preset-4 font-dm-sans-reg mb-3">
+          <span className="text-preset-1 font-dm-sans-med block">&gt;56%</span>{" "}
+          faster audience growth
+        </h1>
+        <img src={audienceImg} />
+      </div>
+
+      <div className="rounded-lg bg-yellow-100 p-4">
+        <h1 className="text-preset-2 mb-3">
+          Create and schedule content{" "}
+          <span className="text-purple-500">quicker</span>
+        </h1>
+        <img src={createPostImg} />
+      </div>
+
+      <div className="rounded-lg bg-yellow-500 p-3">
+        <h1 className="text-preset-2 mb-3">Write your content using AI.</h1>
+        <img src={aiContentImg} />
       </div>
     </div>
   );
