@@ -10,7 +10,7 @@ import aiContentImg from "./assets/images/illustration-ai-content.webp";
 function App() {
   return (
     <div className="mx-auto my-3 grid max-w-52 gap-4 md:max-w-100 md:grid-cols-2 lg:h-screen lg:max-w-250 lg:grid-cols-4 lg:grid-rows-3">
-      <div className="flex flex-col place-items-center rounded-2xl bg-purple-500 p-5 text-white lg:col-span-2 lg:col-start-2 lg:row-start-1">
+      <div className="flex flex-col place-items-center rounded-2xl bg-purple-500 p-5 text-white md:col-span-2 lg:col-span-2 lg:col-start-2 lg:row-start-1">
         <h1 className="text-preset-1 mb-3 text-center">
           Social Media <span className="text-yellow-500">10x</span>
           <span className="italic"> Faster</span> with AI
@@ -21,9 +21,9 @@ function App() {
         </span>
       </div>
 
-      <div className="rounded-2xl bg-white p-2 md:col-span-1 lg:col-span-1 lg:col-start-2 lg:row-start-2">
+      <div className="rounded-2xl bg-white p-2 md:col-span-1 md:flex md:flex-col md:place-content-between lg:col-span-1 lg:col-start-2 lg:row-start-2">
         <img className="mb-2" src={multiplePathsImg} />
-        <h1 className="text-preset-3">
+        <h1 className="text-preset-3 md:w-7/10">
           Manage multiple accounts and platforms.
         </h1>
       </div>
@@ -33,12 +33,14 @@ function App() {
           Maintain a consistent posting schedule.
         </h1>
         <div
-          className={`h-17 w-full bg-no-repeat md:h-30 bg-[url(${consistentImg})] `}
+          className={`h-17 w-full bg-contain bg-no-repeat md:h-26 md:w-7/10 bg-[url(${consistentImg})]`}
         />
       </div>
 
-      <div className="rounded-2xl bg-purple-100 p-2 md:col-span-2 lg:col-span-1 lg:col-start-4 lg:row-span-2 lg:row-start-1">
-        <h1 className="text-preset-3 mb-3">Schedule to social media</h1>
+      <div className="flex flex-col place-items-center rounded-2xl bg-purple-100 p-2 md:col-span-2 md:px-34 lg:col-span-1 lg:col-start-4 lg:row-span-2 lg:row-start-1">
+        <h1 className="text-preset-3 mb-3 text-center">
+          Schedule to social media
+        </h1>
         <img className="mb-3" src={scheduleImg} />
         <span className="text-preset-4 font-dm-sans-reg block text-center">
           Optimize post timings to publish content at the perfect time for your
@@ -46,15 +48,15 @@ function App() {
         </span>
       </div>
 
-      <div className="rounded-2xl bg-purple-500 p-4 text-white md:col-span-2 lg:col-span-2 lg:col-start-3 lg:row-start-3">
-        <img className="mx-auto mb-5" src={growthImg} />
+      <div className="rounded-2xl bg-purple-500 p-4 text-white md:col-span-2 md:flex md:place-items-center md:px-8 lg:col-span-2 lg:col-start-3 lg:row-start-3">
+        <img className="mx-auto mb-5 md:mb-0 md:h-30" src={growthImg} />
         <h1 className="text-preset-2 text-center">
           Grow followers with non-stop content.
         </h1>
       </div>
 
-      <div className="rounded-2xl bg-white p-3 md:col-span-2 lg:col-span-1 lg:col-start-2 lg:row-start-3">
-        <h1 className="text-preset-4 font-dm-sans-reg mb-3">
+      <div className="items-center justify-between rounded-2xl bg-white p-3 md:col-span-2 md:flex lg:col-span-1 lg:col-start-2 lg:row-start-3">
+        <h1 className="text-preset-4 font-dm-sans-reg mb-3 md:mb-0 md:h-min">
           <span className="text-preset-1 font-dm-sans-med mb-2 block">
             &gt;56%
           </span>
@@ -63,7 +65,7 @@ function App() {
         <img src={audienceImg} />
       </div>
 
-      <div className="rounded-2xl bg-yellow-100 p-4 lg:col-span-1 lg:col-start-1 lg:row-start-1">
+      <div className="rounded-2xl bg-yellow-100 p-4 md:flex md:flex-col md:justify-center lg:col-span-1 lg:col-start-1 lg:row-start-1">
         <h1 className="text-preset-2 mb-3">
           Create and schedule content
           <span className="text-purple-500 italic"> quicker</span>
