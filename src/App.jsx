@@ -10,19 +10,19 @@ import aiContentImg from "./assets/images/illustration-ai-content.webp";
 function App() {
   return (
     <div className="m-3 mx-auto grid max-w-68 gap-4 md:max-w-100 md:grid-cols-2 lg:h-screen lg:max-w-250 lg:grid-cols-4 lg:grid-rows-3">
-      <div className="flex flex-col place-items-center rounded-lg bg-purple-500 p-9 text-white lg:col-span-2 lg:col-start-2 lg:row-start-1">
-        <h1 className="text-preset-1 text-center">
+      <div className="flex flex-col place-items-center rounded-lg bg-purple-500 p-5 text-white lg:col-span-2 lg:col-start-2 lg:row-start-1">
+        <h1 className="text-preset-1 mb-3 text-center">
           Social Media <span className="text-yellow-500">10x</span>
           <span className="italic"> Faster</span> with AI
         </h1>
-        <img src={fiveStarsImg} />
+        <img className="mb-1" src={fiveStarsImg} />
         <span className="text-preset-4 font-dm-sans-reg">
           Over 4,000 5-star reviews
         </span>
       </div>
 
       <div className="rounded-lg bg-white p-2 md:col-span-1 lg:col-span-1 lg:col-start-2 lg:row-start-2">
-        <img src={multiplePathsImg} />
+        <img className="mb-2" src={multiplePathsImg} />
         <h1 className="text-preset-3">
           Manage multiple accounts and platforms.
         </h1>
@@ -46,7 +46,7 @@ function App() {
         </span>
       </div>
 
-      <div className="rounded-lg bg-purple-500 p-3 text-white md:col-span-2 lg:col-span-2 lg:col-start-3 lg:row-start-3">
+      <div className="rounded-lg bg-purple-500 p-4 text-white md:col-span-2 lg:col-span-2 lg:col-start-3 lg:row-start-3">
         <img className="mx-auto mb-5" src={growthImg} />
         <h1 className="text-preset-2 text-center">
           Grow followers with non-stop content.
