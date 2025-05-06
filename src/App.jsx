@@ -9,11 +9,11 @@ import aiContentImg from "./assets/images/illustration-ai-content.webp";
 
 function App() {
   return (
-    <div className="m-3 grid gap-3">
+    <div className="m-3 mx-auto grid max-w-68 gap-4">
       <div className="flex flex-col place-items-center rounded-lg bg-purple-500 p-9 text-white">
         <h1 className="text-preset-1 text-center">
           Social Media <span className="text-yellow-500">10x</span>
-          <span className="italic">Faster</span> with AI
+          <span className="italic"> Faster</span> with AI
         </h1>
         <img src={fiveStarsImg} />
         <span className="text-preset-4 font-dm-sans-reg">
