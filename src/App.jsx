@@ -10,7 +10,7 @@ import aiContentImg from "./assets/images/illustration-ai-content.webp";
 function App() {
   return (
     <div className="m-3 mx-auto grid max-w-68 gap-4 md:max-w-100 md:grid-cols-2 lg:h-screen lg:max-w-250 lg:grid-cols-4 lg:grid-rows-3">
-      <div className="col-span-2 flex flex-col place-items-center rounded-lg bg-purple-500 p-9 text-white">
+      <div className="flex flex-col place-items-center rounded-lg bg-purple-500 p-9 text-white lg:col-span-2 lg:col-start-2 lg:row-start-1">
         <h1 className="text-preset-1 text-center">
           Social Media <span className="text-yellow-500">10x</span>
           <span className="italic"> Faster</span> with AI
@@ -21,14 +21,14 @@ function App() {
         </span>
       </div>
 
-      <div className="rounded-lg bg-white p-2 md:col-span-1">
+      <div className="rounded-lg bg-white p-2 md:col-span-1 lg:col-span-1 lg:col-start-2 lg:row-start-2">
         <img src={multiplePathsImg} />
         <h1 className="text-preset-3">
           Manage multiple accounts and platforms.
         </h1>
       </div>
 
-      <div className="rounded-lg bg-yellow-500 p-2 pb-0 md:col-span-1">
+      <div className="rounded-lg bg-yellow-500 p-2 pb-0 md:col-span-1 lg:col-span-1 lg:col-start-3 lg:row-start-2">
         <h1 className="text-preset-3 mb-2">
           Maintain a consistent posting schedule.
         </h1>
@@ -37,7 +37,7 @@ function App() {
         />
       </div>
 
-      <div className="rounded-lg bg-purple-100 p-2 md:col-span-2">
+      <div className="rounded-lg bg-purple-100 p-2 md:col-span-2 lg:col-span-1 lg:col-start-4 lg:row-span-2 lg:row-start-1">
         <h1 className="text-preset-3 mb-3">Schedule to social media</h1>
         <img className="mb-3" src={scheduleImg} />
         <span className="text-preset-4 font-dm-sans-reg block text-center">
@@ -46,30 +46,30 @@ function App() {
         </span>
       </div>
 
-      <div className="rounded-lg bg-purple-500 p-3 text-white md:col-span-2">
+      <div className="rounded-lg bg-purple-500 p-3 text-white md:col-span-2 lg:col-span-2 lg:col-start-3 lg:row-start-3">
         <img className="mx-auto mb-5" src={growthImg} />
         <h1 className="text-preset-2 text-center">
           Grow followers with non-stop content.
         </h1>
       </div>
 
-      <div className="rounded-lg bg-white p-3 md:col-span-2">
+      <div className="rounded-lg bg-white p-3 md:col-span-2 lg:col-span-1 lg:col-start-2 lg:row-start-3">
         <h1 className="text-preset-4 font-dm-sans-reg mb-3">
-          <span className="text-preset-1 font-dm-sans-med block">&gt;56%</span>{" "}
+          <span className="text-preset-1 font-dm-sans-med block">&gt;56%</span>
           faster audience growth
         </h1>
         <img src={audienceImg} />
       </div>
 
-      <div className="rounded-lg bg-yellow-100 p-4">
+      <div className="rounded-lg bg-yellow-100 p-4 lg:col-span-1 lg:col-start-1 lg:row-start-1">
         <h1 className="text-preset-2 mb-3">
-          Create and schedule content{" "}
-          <span className="text-purple-500">quicker</span>
+          Create and schedule content
+          <span className="text-purple-500"> quicker</span>
         </h1>
         <img src={createPostImg} />
       </div>
 
-      <div className="rounded-lg bg-yellow-500 p-3">
+      <div className="rounded-lg bg-yellow-500 p-3 lg:col-span-1 lg:col-start-1 lg:row-span-2">
         <h1 className="text-preset-2 mb-3">Write your content using AI.</h1>
         <img src={aiContentImg} />
       </div>
