@@ -28,7 +28,7 @@ function App() {
         </h1>
       </div>
 
-      <div className="h-32 overflow-clip rounded-2xl bg-yellow-500 pt-2 pl-2 md:col-span-1 lg:col-span-1 lg:col-start-3 lg:row-start-2 lg:flex lg:flex-col lg:justify-between lg:pe-2">
+      <div className="h-32 overflow-clip rounded-2xl bg-yellow-500 pt-2 pl-2 md:col-span-1 lg:col-span-1 lg:col-start-3 lg:row-start-2 lg:flex lg:h-full lg:flex-col lg:justify-between lg:pe-2">
         <h1 className="text-preset-3 mb-2">
           Maintain a consistent posting schedule.
         </h1>
