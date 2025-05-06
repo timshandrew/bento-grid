@@ -9,7 +9,7 @@ import aiContentImg from "./assets/images/illustration-ai-content.webp";
 
 function App() {
   return (
-    <div className="mx-auto my-3 grid max-w-52 gap-4 md:max-w-100 md:grid-cols-2 lg:min-h-[calc(100vh-var(--spacing)*3*2)] lg:max-w-175 lg:grid-cols-4 lg:grid-rows-[20rem_5rem_15rem_20rem]">
+    <div className="mx-auto my-6 grid max-w-52 gap-4 md:max-w-100 md:grid-cols-2 lg:min-h-[calc(100vh-var(--spacing)*3*2)] lg:max-w-175 lg:grid-cols-4 lg:grid-rows-[20rem_5rem_15rem_20rem]">
       <div className="flex flex-col place-items-center rounded-2xl bg-purple-500 p-5 text-white md:col-span-2 lg:col-span-2 lg:col-start-2 lg:row-start-1">
         <h1 className="text-preset-1 mb-3 text-center">
           Social Media <span className="text-yellow-500">10x</span>
@@ -59,7 +59,7 @@ function App() {
         </h1>
       </div>
 
-      <div className="items-center justify-between rounded-2xl bg-white p-3 md:col-span-2 md:flex lg:col-span-1 lg:col-start-2 lg:row-start-3 lg:row-start-4 lg:flex-col">
+      <div className="items-center justify-between rounded-2xl bg-white p-3 md:col-span-2 md:flex lg:col-span-1 lg:col-start-2 lg:row-start-4 lg:flex-col">
         <h1 className="text-preset-4 font-dm-sans-reg mb-3 md:mb-0 md:h-min">
           <span className="text-preset-1 font-dm-sans-med mb-2 block">
             &gt;56%
