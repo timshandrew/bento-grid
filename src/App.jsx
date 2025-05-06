@@ -9,7 +9,7 @@ import aiContentImg from "./assets/images/illustration-ai-content.webp";
 
 function App() {
   return (
-    <div className="mx-auto my-3 grid max-w-52 gap-4 md:max-w-100 md:grid-cols-2 lg:h-screen lg:max-w-250 lg:grid-cols-4 lg:grid-rows-3">
+    <div className="mx-auto my-3 grid max-w-52 gap-4 md:max-w-100 md:grid-cols-2 lg:min-h-[calc(100vh-var(--spacing)*3*2)] lg:max-w-175 lg:grid-cols-4 lg:grid-rows-[20rem_20rem_20rem]">
       <div className="flex flex-col place-items-center rounded-2xl bg-purple-500 p-5 text-white md:col-span-2 lg:col-span-2 lg:col-start-2 lg:row-start-1">
         <h1 className="text-preset-1 mb-3 text-center">
           Social Media <span className="text-yellow-500">10x</span>
@@ -21,28 +21,31 @@ function App() {
         </span>
       </div>
 
-      <div className="rounded-2xl bg-white p-2 md:col-span-1 md:flex md:flex-col md:place-content-between lg:col-span-1 lg:col-start-2 lg:row-start-2">
+      <div className="rounded-2xl bg-white p-3 md:col-span-1 md:flex md:flex-col md:place-content-between lg:col-span-1 lg:col-start-2 lg:row-start-2">
         <img className="mb-2" src={multiplePathsImg} />
         <h1 className="text-preset-3 md:w-7/10">
           Manage multiple accounts and platforms.
         </h1>
       </div>
 
-      <div className="rounded-2xl bg-yellow-500 pt-2 pb-0 pl-2 md:col-span-1 lg:col-span-1 lg:col-start-3 lg:row-start-2">
+      <div className="rounded-2xl bg-yellow-500 pt-2 pl-2 md:col-span-1 lg:col-span-1 lg:col-start-3 lg:row-start-2 lg:flex lg:flex-col lg:justify-between lg:pe-2">
         <h1 className="text-preset-3 mb-2">
           Maintain a consistent posting schedule.
         </h1>
         <div
-          className={`h-17 w-full bg-contain bg-no-repeat md:h-26 md:w-7/10 bg-[url(${consistentImg})]`}
+          className={`h-17 w-full bg-contain bg-no-repeat md:h-26 md:w-7/10 bg-[url(${consistentImg})] lg:w-full lg:bg-center`}
         />
       </div>
 
-      <div className="flex flex-col place-items-center rounded-2xl bg-purple-100 p-2 md:col-span-2 md:px-34 lg:col-span-1 lg:col-start-4 lg:row-span-2 lg:row-start-1">
-        <h1 className="text-preset-3 mb-3 text-center">
-          Schedule to social media
+      <div className="flex flex-col place-items-center overflow-clip rounded-2xl bg-purple-100 p-2 md:col-span-2 md:px-34 lg:col-span-1 lg:col-start-4 lg:row-span-2 lg:row-start-1 lg:justify-center lg:p-5 lg:pr-0">
+        <h1 className="text-preset-3 mb-3 text-center lg:text-left">
+          Schedule to social media.
         </h1>
-        <img className="mb-3" src={scheduleImg} />
-        <span className="text-preset-4 font-dm-sans-reg block text-center">
+        <img
+          className="mb-3 lg:w-60 lg:max-w-none lg:self-start"
+          src={scheduleImg}
+        />
+        <span className="text-preset-4 font-dm-sans-reg block text-center lg:pe-3 lg:text-left">
           Optimize post timings to publish content at the perfect time for your
           audience.
         </span>
@@ -55,7 +58,7 @@ function App() {
         </h1>
       </div>
 
-      <div className="items-center justify-between rounded-2xl bg-white p-3 md:col-span-2 md:flex lg:col-span-1 lg:col-start-2 lg:row-start-3">
+      <div className="items-center justify-between rounded-2xl bg-white p-3 md:col-span-2 md:flex lg:col-span-1 lg:col-start-2 lg:row-start-3 lg:flex-col">
         <h1 className="text-preset-4 font-dm-sans-reg mb-3 md:mb-0 md:h-min">
           <span className="text-preset-1 font-dm-sans-med mb-2 block">
             &gt;56%
@@ -73,7 +76,7 @@ function App() {
         <img src={createPostImg} />
       </div>
 
-      <div className="rounded-2xl bg-yellow-500 p-3 lg:col-span-1 lg:col-start-1 lg:row-span-2">
+      <div className="rounded-2xl bg-yellow-500 p-3 lg:col-span-1 lg:col-start-1 lg:row-span-2 lg:flex lg:flex-col lg:justify-between">
         <h1 className="text-preset-2 mb-3">Write your content using AI.</h1>
         <img className="w-40" src={aiContentImg} />
       </div>
